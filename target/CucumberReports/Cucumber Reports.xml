@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="1.036" tests="4" skipped="0" failures="0" errors="0">
+<testcase classname="Login function" name="Login with valid credenitals" time="0.108">
+<system-out><![CDATA[
+Given user opens the browser................................................passed
+And User enters the application URL.........................................passed
+When user enters the email id"sagarrsajjan@gmail.com".......................passed
+And User enters the password "Dboss@2456"...................................passed
+And User clicks on login button.............................................passed
+Then home page should be displayed..........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login function" name="Login with invalid email and valid password" time="0.029">
+<system-out><![CDATA[
+Given user opens the browser................................................passed
+And User enters the application URL.........................................passed
+When user enters the inavlid email id"sagarsajjan@gmail.com"................passed
+And User enters the password "Dbos@2456"....................................passed
+And User clicks on login button.............................................passed
+Then user will get proper waring message....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Register functionality" name="Register with manodatary fields" time="0.059">
+<system-out><![CDATA[
+Given User naviagtes to account page........................................passed
+When User enters firstname"sagar" into first name textfield.................passed
+And User enters lastname "sajjan" into last name textfield..................passed
+And User enters email id "sagarrsajjan@gmail.com" into email text field.....passed
+And User enters telephone "8095187515" into telephone textfield.............passed
+And User enters password "Dboss@2456" into password textfield...............passed
+And User enters password "Dboss@2456" into confirm password textfield.......passed
+And User selects privacy policy.............................................passed
+And User clicks on continue button..........................................passed
+Then Account will be created................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="search function" name="search for valid product" time="0.042">
+<system-out><![CDATA[
+Given User enters the application url.......................................passed
+When User enters the valid product..........................................passed
+And User click s on search field............................................passed
+Then valid product should be displayed......................................passed
+]]></system-out>
+</testcase>
+</testsuite>
